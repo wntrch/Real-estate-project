@@ -4,6 +4,16 @@ header {
     border-radius: 0.3rem;
     background-image: linear-gradient(to right, #666666, #FDF200, #FFF);
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, #666666, #FDF200, #FFF);
+    color: white;
+    text-align: center;
+  }
+
 
 .navbar {
     position: relative;
@@ -79,6 +89,7 @@ h1 {
     border-bottom: 1px solid black;
     padding: 0;
     color: white;
+    margin-bottom: 2px;
 }
 .form-control:focus, .form-control:active {
 border-color: rgba(166, 166, 31, 0.615)!important;

@@ -11,6 +11,12 @@
 	<!-- Custom CSS Stylesheet -->
 	<link rel="stylesheet" href="/styles/styles_copy.css" />
 
+	<!--Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+
+
 	<title>Home Page</title>
 </head>
 
@@ -18,10 +24,10 @@
 	<header>
         <div class="container">
             <div class="row">
-                <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <img src="images/sslogo.png" alt="logo" id="logo"/></a>
+                <div class="col col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="images/logo.png" alt="logo" id="logo"/></a>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md-6 align-self-center">
                     <h1>Stay Spotter</h1>
                 </div>
             </div>
@@ -29,20 +35,53 @@
 	</header>
 
 	<div id="main">
-		<nav class="topnavbar navbar-expand-sm sticky-top">
+
+		<nav class="topNavbar navbar-expand-sm navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"></a>
+    
+      <button
+        class="navbar-toggler ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#topnavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="topnavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              ><i class="fa fa-home fa-lg"></i> Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html"
+              ><i class="fa fa-info fa-lg"></i> About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fa fa-list fa-lg"></i> Connect</a
+            >
+          </li>
+      </div>
+    </div>
+  </nav>
+		<!-- <nav class="topnavbar navbar-expand-sm sticky-top">
 			<div class="container">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#topnavbar">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbar">
-					<ul class="navbar-nav">
+				<div class="collapse navbar-collapse" id="topnavbar">
+					<ul class="navbar-nav mx-auto">
 						<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
 						<li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-circle-info fa-lg"></i> About Us</a></li>
 						<li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-handshake fa-lg"></i> Connect</a></li>
 					</ul>
 				</div>
 			</div>
-		</nav>
+		</nav> -->
 
 		<!--Search bar-->
 		<div class="container" id="searchbar">
@@ -57,40 +96,170 @@
 		<!--Side Navbar-->
 		<div class="sidenav" id="categorySidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="#">Link 1</a>
-			<a href="#">Link 2</a>
-			<a href="#">Link 3</a>
-			<a href="#">Link 4</a>
-			<a href="#">Link 5</a>
+			<a href="#"><i class="fa fa-house-chimney fa-lg"></i> All homes</a>
+			<a href="#"><i class="fa fa-house"></i> Cabins</a>
+			<a href="#"><i class="fa fa-mountain-sun fa-lg"></i> Countryside</a>
+			<a href="#"><i class="fa fa-city fa-lg"></i> Inner City</a>
+			<a href="#"><i class="fa fa-water fa-lg"></i> Oceanside</a>
 		</div>
 
-		<!--Main Content-->
-		<div>
-			<div class="arrowContainer"
-				<a id="sidenavArrow" class="btn" onclick="openNav()"><i class="fa fa-arrow-left-long fa-lg"></i></a>
+		<!--Arrow to open side navbar-->
+		<div class="arrowContainer">
+			<a id="sidenavArrow" class="btn" onclick="openNav()"><i class="fa fa-arrow-left-long fa-lg"></i></a>
+		</div>
+		
+		<!--Listings grid-->
+		<div class="container" id="listing">
+			<div class="row">
+				<div class="col col-12 col-sm-6 col-md-4">
+					<div class="card">
+						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col col-12 col-sm-6 col-md-4">
+					<div class="card">
+						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="card">
+						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+						</div>
+					</div>
+				</div>
 			</div>
-			<h3>What is Lorem Ipsum?</h3>
-			<p>
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-			</p>
-			<h3>Why do we use it?</h3>
-			<p>
-				It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-			</p>
-			<h3>Where can I get some?</h3>
-			<p>
-				There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc
-			</p>
-			<h3>Why do we use it?</h3>
-			<p>
-				Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-			</p>
+
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="card">
+						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="card">
+						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="card">
+						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="card">
+						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="card">
+						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="card">
+						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="card">
+						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="card">
+						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="card">
+						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="card">
+						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="card">
+						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="card">
+						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
 	<!--Footer-->
 	<footer>
-		
+		<div class="container">
+			<div class="row">
+				<div class="col col-3 col-sm-2 col-md-2 mx-auto">
+					<img src="images/logo.png" id="logo" alt="logo" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-12 text-center">
+					<p id="footer-text">Copyright ©2023 Stay Spotter, LLC. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
 	</footer>
 
 	<!-- jQuery must come first, then Popper.js, Bootstrap JavaScript plugins, FontAwesome and custom js-->

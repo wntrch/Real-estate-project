@@ -11,17 +11,20 @@ header {
     margin: 0;
     background-image: linear-gradient(to right, #666666, #FDF200, #FFF);
 }
-.footer {
-    position: fixed;
+
+footer {
+    margin-top: 2.5rem;
+    padding: 0.5rem 1rem; /* top and bottom/right and left // 2rem = 32px */
     left: 0;
     bottom: 0;
     width: 100%;
     background-image: linear-gradient(to right, #666666, #FDF200, #FFF);
-    color: white;
     text-align: center;
+    align-items: center;
+    font-weight: bold;
   }
 
-.topnavbar {
+  .topNavbar {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -34,6 +37,27 @@ header {
     padding: 0.5rem 1rem;
     background-color: #000;
     color: #FFF;
+}
+
+/* .topnavbar {
+    background-image: linear-gradient(to right, #000, #666666);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+} */
+
+i {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    margin: 0;
+    border-radius: 0;
+    border: none;
 }
 
 .sticky-top {
@@ -55,11 +79,11 @@ header {
 
 /* The side navigation menu */
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
     right: 0;
     background-color: #111;
     overflow-x: hidden;
@@ -92,10 +116,15 @@ header {
     right: -10px;
     transform: translateY(-50%);
     font-size: 24px;
-    color:rgb(0,0,0,0.2);
-    background-color: #f2f2f2;
+    color:#FFF;
+    background-color: rgb(0,0,0,0.9);
     border-radius: 5%;
     cursor: pointer;
+  }
+
+  #sidenavArrow:hover {
+    color: #FDF200;
+    background-color:rgba(0,0,0,0.8);
   }
   
   /* Position and style the close button (top right corner) */
@@ -110,7 +139,7 @@ header {
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
     transition: margin-left .5s;
-    padding: 0px;
+    padding: 0;
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -125,7 +154,8 @@ a {
 }
 
 a:hover {
-    color: #FDF200;
+    background-color:rgba(0,0,0,0.8);
+    color:#FDF200;
 }
 
 .btn {
@@ -156,8 +186,7 @@ body {
     font-family: "Open Sans", sans-serif; }
 
 #logo {
-    border-radius: 50%;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -165,7 +194,8 @@ p {
     font-size: 12px;
 }
 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 800;
 }
 .bg-primary {
     background-color: yellow!important;

@@ -235,6 +235,13 @@ border-color: rgba(166, 166, 31, 0.615)!important;
     color: black;
     margin-bottom: 50px;
 }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 .about-us {
     display: flex;
     align-items: center;
@@ -254,6 +261,13 @@ border-color: rgba(166, 166, 31, 0.615)!important;
     font-size: 24px;
     margin: 15px 0px;
 }
+
+.content p {
+    color: black;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 15px 0px;
+}
 .read-more-btn {
     display: inline-block;
     color: black;
@@ -266,7 +280,7 @@ border-color: rgba(166, 166, 31, 0.615)!important;
 .read-more-btn:hover{
     background-color: gray;
 }
-@media(maz-width: 768px){
+@media(max-width: 768px){
     .about-us {
         flex-direction: column;
     }

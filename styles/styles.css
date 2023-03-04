@@ -5,13 +5,13 @@ header {
     background-image: linear-gradient(to right, #666666, #FDF200, #FFF);
 }
 .footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-image: linear-gradient(to right, #666666, #FDF200, #FFF);
     color: white;
     text-align: center;
+    padding-bottom: 25px;
   }
 
 .navbar {

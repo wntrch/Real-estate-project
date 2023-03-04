@@ -24,6 +24,12 @@ footer {
     font-weight: bold;
   }
 
+  #footer-text {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: -5px;
+  }
+
   .topNavbar {
     display: -ms-flexbox;
     display: flex;
@@ -73,7 +79,7 @@ i {
     flex: 1 1 auto;
     width: 35%;
     min-width: 0;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     margin-top: 10px;
   }
 

@@ -35,41 +35,33 @@
 	</header>
 
 	<div id="main">
+		<nav class="topNavbar navbar-expand-sm navbar-dark sticky-top">
+			<div class="container">
+				<a class="navbar-brand" href="#"></a><button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#topnavbar">
+        		<span class="navbar-toggler-icon"></span>
+      			</button>
 
-<nav class="topNavbar navbar-expand-sm navbar-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#"></a>
-    
-      <button
-        class="navbar-toggler ml-auto"
-        type="button"
-        data-toggle="collapse"
-        data-target="#topnavbar"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="topnavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              ><i class="fa fa-home fa-lg"></i> Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html"
-              ><i class="fa fa-info fa-lg"></i> About Us</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactus.html"
-              ><i class="fa fa-list fa-lg"></i> Connect</a
-            >
-          </li>
-		</ul> 
-      </div>
-    </div>
-  </nav>
+				<div class="collapse navbar-collapse" id="topnavbar">
+					<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#"
+						><i class="fa fa-home fa-lg"></i> Home</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="aboutus.html"
+						><i class="fa fa-info fa-lg"></i> About Us</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contactus.html"
+						><i class="fa fa-list fa-lg"></i> Connect</a
+						>
+					</li>
+					</ul> 
+				</div>
+			</div>
+		</nav>
 		<!-- <nav class="topnavbar navbar-expand-sm sticky-top">
 			<div class="container">
 				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#topnavbar">
@@ -87,19 +79,30 @@
 
 		<!--Search bar-->
 		<div class="container" id="searchbar">
-			<div class="input-group">
-				<input type="text" class="form-control" placeholder="Enter a destination">
-				<span>
-					<a class="btn" href="#"><i class="fa fa-magnifying-glass fa-lg"></i></a>
-				</span>
+			<div class="col-md-10">
+                <form>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Enter a destination">
+						<span>
+							<a class="btn" href="#"><i class="fa fa-magnifying-glass fa-lg"></i></a>
+						</span>
+					</div>
+				</form>
 			</div>
 		</div>
+
+		<!-- <div class="form-group row">
+			<label for="firstName" class="col-md-2 col-form-label">First Name</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control" id="firstName" name="firstname" placeholder="First Name" />
+			</div>
+		</div> -->
 
 		<!--Side Navbar-->
 		<div class="sidenav" id="categorySidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<a href="#"><i class="fa fa-house-chimney fa-lg"></i> All homes</a>
-			<a href="#"><i class="fa fa-house"></i> Cabins</a>
+			<a href="#"><i class="fa fa-house fa-lg"></i> Cabins</a>
 			<a href="#"><i class="fa fa-mountain-sun fa-lg"></i> Countryside</a>
 			<a href="#"><i class="fa fa-city fa-lg"></i> Inner City</a>
 			<a href="#"><i class="fa fa-water fa-lg"></i> Oceanside</a>
@@ -115,23 +118,25 @@
 			<div class="row">
 				<div class="col col-12 col-sm-6 col-md-4">
 					<div class="card">
-						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<a href=listing.html><img src="https://a0.muscache.com/im/pictures/2e24b098-41ed-4d92-80c0-1e8d65bfbce4.jpg?im_w=1200" class="card-img-top" alt="tinyhome"></a>
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
+							<p class="card-title">Tiny home in Williams, AZ</p>
+							<p class="card-text">$199/night</p>
 						</div>
 					</div>
 				</div>
 				<div class="col col-12 col-sm-6 col-md-4">
 					<div class="card">
-						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<img src="https://a0.muscache.com/im/pictures/miso/Hosting-53045905/original/89b5977c-2f30-42d8-83df-ac641bb0ac49.jpeg?im_w=1200" class="card-img-top" alt="lakehome">
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
+							<p class="card-title"> Lakefront Contemporary</p>
+							<p class="card-text">$606/night</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-md-4">
 					<div class="card">
-						<img src="images/placeholder.jpg" class="card-img-top" alt="placeholder">
+						<img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-780007512498865966/original/e5049a23-625d-4ae0-92ca-61f76af62abc.jpeg?im_w=1200" class="card-img-top" alt="placeholder">
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 						</div>
@@ -258,18 +263,9 @@
 			</div>
 			<div class="row">
 				<div class="col-12 col-sm-12 text-center">
-					<p id="footer-text">Copyright ©2023 Stay Spotter, LLC. All rights reserved.</p>
+					<p id="footer-text">© 2023 StaySpotter, LLC. All rights reserved.</p>
 				</div>
 			</div>
-			<!-- <div class="row">
-                <div class="col col-4 col-sm-3 col-md-2 align-self-center">
-                    <img src="images/logo.png" alt="logo" id="logo"/></a>
-                </div>
-                <div class="col col-sm-6 col-md-6 align-self-center ps-0">
-					<p id="footer-text" class="ms-0">Copyright ©2023 Stay Spotter, LLC. All rights reserved.</p>
-                </div>
-            </div>
-		</div> -->
 	</footer>
 
 	<!-- jQuery must come first, then Popper.js, Bootstrap JavaScript plugins, FontAwesome and custom js-->

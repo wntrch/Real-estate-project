@@ -1,4 +1,4 @@
-header {
+/* header {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
     border-radius: 0.3rem;
@@ -27,22 +27,22 @@ header {
     padding: 0.5rem 1rem;
     background-color: #000;
     color: #FFF;
-}
+} */
 
 /* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-
+/* .sidenav { */
+    /* height: 100%; 100% Full-height */
+    /* width: 0; 0 width - change this with JavaScript */
+    /* position: fixed; Stay in place */
+    /* z-index: 1; Stay on top */
+    /* top: 0; Stay at the top */
+    /* left: 0; */
+    /* background-color: #111; Black */
+    /* overflow-x: hidden; Disable horizontal scroll */
+    /* padding-top: 60px; Place content 60px from the top */
+    /* transition: 0.5s; 0.5 second transition effect to slide in the sidenav */
+  /* } */
+/* 
 a {
     color: #FFF;
 }
@@ -59,9 +59,9 @@ body {
     border-radius: 50%;
     max-width: 100%;
     height: auto;
-}
+} */
 /* contactUs style */
-.container {
+/* .container {
     width: 1000px!important;
 
 }
@@ -93,9 +93,9 @@ h1 {
 }
 .form-control:focus, .form-control:active {
 border-color: rgba(166, 166, 31, 0.615)!important;
-}
+} */
 /* About Us Styling */
-.heading {
+/* .heading {
     text-align: center;
     margin-top: 25px;
 }
@@ -153,4 +153,4 @@ border-color: rgba(166, 166, 31, 0.615)!important;
         max-width: 100%;
         padding: 15px;
     }
-}
+} */

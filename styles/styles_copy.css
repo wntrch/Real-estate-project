@@ -303,3 +303,10 @@ border-color: rgba(166, 166, 31, 0.615)!important;
         padding: 15px;
     }
 }
+/* aboutusnavbar */
+.navbar {
+    background-color: black;
+}
+ul {
+    margin: auto;
+}

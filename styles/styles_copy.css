@@ -14,7 +14,7 @@ header {
 }
 
 footer {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     padding: 0.5rem 1rem; /* top and bottom/right and left // 2rem = 32px */
     left: 0;
     bottom: 0;
@@ -74,14 +74,30 @@ i {
     z-index: 1020;
   }
 
-  #searchbar {
-    position: relative;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    width: 35%;
-    min-width: 0;
-    margin-bottom: 15px;
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  form {
+    display: flex;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    color: #000;
+    background-color: #000;
+    color: white;
   }
 
 /* The side navigation menu */
@@ -164,6 +180,9 @@ a:hover {
     background-color:rgba(0,0,0,0.8);
     color:#FDF200;
 }
+a > img:hover {
+    background-color: transparent;
+}
 
 .btn {
     background-color:#000;
@@ -191,6 +210,16 @@ a:hover {
 
 body {
     font-family: "Open Sans", sans-serif;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.card-img-top {
+  width: 350px;
+  height: 200px;
+  max-width: 100%;
 }
 
 #logo {

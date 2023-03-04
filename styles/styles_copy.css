@@ -56,7 +56,7 @@ footer {
     border-radius: 0;
     border: none;
 } */
-
+/* 
 i {
     color: white;
     font-size: 1.5rem;
@@ -64,8 +64,8 @@ i {
     padding: 0.5rem 0.75rem;
     margin: 0;
     border-radius: 0;
-    border: none;
-}
+    border: none; */
+/* } */
 
 .sticky-top {
     position: -webkit-sticky;
@@ -138,7 +138,6 @@ i {
     top: 50%;
     right: -10px;
     transform: translateY(-50%);
-    font-size: 24px;
     color:#FFF;
     background-color: rgb(0,0,0,0.9);
     border-radius: 5%;

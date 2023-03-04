@@ -10,6 +10,7 @@ header {
     padding: 2rem 1rem; /* top and bottom/right and left // 2rem = 32px */
     margin: 0;
     background-image: linear-gradient(to right, #666666, #FDF200, #FFF);
+    font-weight: 800;
 }
 
 footer {
@@ -183,7 +184,8 @@ a:hover {
 }
 
 body {
-    font-family: "Open Sans", sans-serif; }
+    font-family: "Open Sans", sans-serif;
+}
 
 #logo {
     width: 100%;
@@ -230,6 +232,7 @@ border-color: rgba(166, 166, 31, 0.615)!important;
     color: black;
     margin-bottom: 10px;
 }
+
 .heading p {
     font-size: 20px;
     color: black;

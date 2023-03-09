@@ -1,3 +1,55 @@
+/* || General Styles || */
+
+a {
+    color: #FFF;
+}
+
+/* a:hover {
+    background-color:rgba(0,0,0,0.8);
+    color:#FDF200;
+} */
+
+a > img:hover {
+    background-color: transparent;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.btn {
+    background-color:#000;
+    color:#FFF;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.3rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+    background-color:rgba(0,0,0,0.9);
+    color:#FDF200;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    color: #000;
+    background-color: #000;
+    color: white;
+  }
+
 .container {
     width: 100%;
     padding-right: 15px;
@@ -6,6 +58,43 @@
     margin-left: auto;
 }
 
+h1 {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 800;
+}
+
+/* 
+i {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    margin: 0;
+    border-radius: 0;
+    border: none; */
+/* } */
+
+#logo {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 12px;
+}
+/* ... */
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+
+/* || Header and Main Navigation || */
+
 header {
     padding: 2rem 1rem; /* top and bottom/right and left // 2rem = 32px */
     margin: 0;
@@ -13,25 +102,14 @@ header {
     font-weight: 800;
 }
 
-footer {
-    margin-top: 1.5rem;
-    padding: 0.5rem 1rem; /* top and bottom/right and left // 2rem = 32px */
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-image: linear-gradient(to right, #666666, #FDF200, #FFF);
-    text-align: center;
-    align-items: center;
-    font-weight: bold;
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
   }
 
-  #footer-text {
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: -5px;
-  }
-
-  .topNavbar {
+.topNavbar {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -56,51 +134,79 @@ footer {
     border-radius: 0;
     border: none;
 } */
-/* 
-i {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding: 0.5rem 0.75rem;
-    margin: 0;
-    border-radius: 0;
-    border: none; */
-/* } */
 
-.sticky-top {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-  }
+/* ... */
 
-  .search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 15px;
-  }
-  
-  form {
-    display: flex;
-  }
-  
-  input[type="text"] {
-    padding: 10px;
-    border-radius: 5px 0 0 5px;
-  }
-  
-  button[type="submit"] {
-    padding: 10px;
-    border-radius: 0 5px 5px 0;
-    border: none;
-    color: #000;
+/* || Main Content || */
+
+.card {
+    margin-bottom: 10px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    white-space: normal;
+    overflow: hidden;
+}
+
+.card-body {
+    box-shadow: 0px -2px 3.5px rgba(0,0,0,0.8);
     background-color: #000;
-    color: white;
+    color: #FFF;
+    max-height: 73px;
+}
+
+.card:hover {
+    border: 2px solid rgba(0,0,0,0.7);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-top {
+    width: 350px;
+    height: 200px;
+    max-width: 100%;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 14px;
+    white-space: normal;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 0;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+/* ... */
+
+/* || Footer || */
+
+footer {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem; /* top and bottom/right and left // 2rem = 32px */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, #666666, #FDF200, #FFF);
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
   }
 
-/* The side navigation menu */
+
+  #footer-text {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: -5px;
+  }
+  /* ... */
+
+
+/* || Side Navigation */
+
 .sidenav {
     height: 100%; 
     width: 0; 
@@ -113,8 +219,7 @@ i {
     transition: 0.5s;
     padding-top: 60px;
   }
-  
-  /* The navigation menu links */
+
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -123,13 +228,12 @@ i {
     display: block;
     transition: 0.3s;
   }
-  
-  /* When you mouse over the navigation links, change their color */
+
   .sidenav a:hover {
     color: #f1f1f1;
   }
 
-.arrowContainer {
+  .arrowContainer {
     position: relative;
 }
 
@@ -157,82 +261,9 @@ i {
     font-size: 36px;
     margin-left: 50px;
   }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-    padding: 0;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-  
 
-a {
-    color: #FFF;
-}
+  /* ... */
 
-a:hover {
-    background-color:rgba(0,0,0,0.8);
-    color:#FDF200;
-}
-a > img:hover {
-    background-color: transparent;
-}
-
-.btn {
-    background-color:#000;
-    color:#FFF;
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: 0.3rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.btn:hover {
-    background-color:rgba(0,0,0,0.9);
-    color:#FDF200;
-}
-
-body {
-    font-family: "Open Sans", sans-serif;
-}
-
-.card {
-    margin-bottom: 10px;
-}
-
-.card-img-top {
-  width: 350px;
-  height: 200px;
-  max-width: 100%;
-}
-
-#logo {
-    width: 100%;
-    height: auto;
-}
-
-p {
-    font-size: 12px;
-}
-h1 {
-    font-family: 'Hind Siliguri', sans-serif;
-    font-weight: 800;
-}
 .bg-primary {
     background-color: yellow!important;
 }
@@ -256,7 +287,17 @@ h1 {
 .form-control:focus, .form-control:active {
 border-color: rgba(166, 166, 31, 0.615)!important;
 }
-/* About Us Styling */
+
+form {
+    display: flex;
+  }
+  
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+  }
+
+/* || About Us Style */
 .heading {
     text-align: center;
     margin-top: 25px;
@@ -331,10 +372,12 @@ border-color: rgba(166, 166, 31, 0.615)!important;
         padding: 15px;
     }
 }
-/* aboutusnavbar */
+
 .navbar {
     background-color: black;
 }
 ul {
     margin: auto;
 }
+
+/* ... */
